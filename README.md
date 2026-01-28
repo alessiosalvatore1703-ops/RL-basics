@@ -1,5 +1,17 @@
 # RL-basics
+
 Deep Reinforcement Learning: REINFORCE, Actor-Critic, & PPO
-This repository contains implementations of three core Deep Reinforcement Learning algorithms using PyTorch and OpenAI Gymnasium, progressing from foundational policy gradients to state-of-the-art PPO.
-📂 Project Overview
-1. week1_homework_exercises.ipynb (REINFORCE)Implements the foundational REINFORCE (Vanilla Policy Gradient) algorithm.Core Logic: Monte Carlo policy updates using rewards-to-go.Key Functions: discounted_return for cumulative rewards and compute_loss for the standard policy gradient loss.Goal: Solves tasks like LunarLander-v3 by directly optimizing policy parameters.2. week2_in_class_exercise1.ipynb (Actor-Critic)Upgrades REINFORCE by adding a value function critic to reduce variance.Core Logic: Two networks (Actor & Critic) and Generalized Advantage Estimation (GAE).Key Functions: compute_gae balances bias-variance, and train_one_epoch now collects next_obs for TD-learning.Improvement: Uses advantages ($A = Q - V$) instead of raw returns to stabilize training.3. week2_in_class_exercise2 (2).ipynb (PPO)Implements Proximal Policy Optimization (PPO) for robust and sample-efficient learning.Core Logic: Uses a Clipped Surrogate Objective to prevent destructive policy updates.Key Features: Trains on the same data for multiple epochs using shuffled mini-batches.Regularization: Includes entropy bonuses to encourage exploration.
+
+This repository contains PyTorch implementations of three foundational to state-of-the-art Deep Reinforcement Learning algorithms, built using OpenAI Gymnasium.
+The project progresses from Vanilla Policy Gradients to Actor-Critic methods, and finally to Proximal Policy Optimization (PPO).
+
+# 📌 Algorithms Implemented
+
+REINFORCE (Vanilla Policy Gradient)
+
+Actor-Critic with GAE
+
+Proximal Policy Optimization (PPO)
+
+
+
